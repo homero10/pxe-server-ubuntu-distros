@@ -19,5 +19,5 @@ else echo Downloading Ubuntu 19.04
     cp -R /tmp/ubuntu19.04/* /data/install/ubuntu/19.04/amd64
     cp -R /tmp/ubuntu19.04/.disk /data/install/ubuntu/19.04/amd64
     umount /tmp/ubuntu19.04
-    touch /data/tftpboot/ubuntu19.04/amd64/ok_01082020
+    touch /data/tftpboot/ubuntu/19.04/amd64/ok_01082020
 fi
