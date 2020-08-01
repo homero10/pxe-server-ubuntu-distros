@@ -1,0 +1,9 @@
+if [ -d /data/tftpboot/ubuntu/19.04/amd64/ ] ;
+then
+else mkdir -p /data/tftpboot/ubuntu/19.04/amd64/
+fi
+
+if [ -d /data/install/ubuntu/19.04/amd64/ ] ;
+then 
+else mkdir -p /data/install/ubuntu/19.04/amd64/ 
+fi

@@ -1,0 +1,28 @@
+# YAML 1.1
+# Fichero de configuración de construcción de paquetería Debian
+
+# Nombre del paquete (minúsculas-separado-con-guiones)
+name: pxe-server-ubuntu-distros
+
+# Autor 
+author: homero10 <homero10@invalid.com>
+
+#Priority
+priority: optional
+
+# Section
+section: metapackages
+
+# Descripción corta
+shortdesc: "Ubuntu distros for PXE boot"
+
+# Descripción larga, las lineas han de estar separadas por "\n "
+longdesc: "This package include Ubuntu systems for Network Boot on Ubuntu"
+
+
+# Versión del paquete
+version: 1.0
+
+# Cambios en esta versión
+changes:
+    - Initial release.

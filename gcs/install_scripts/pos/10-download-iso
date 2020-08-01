@@ -1,0 +1,13 @@
+if [ -f /data/tftpboot/ubuntu/19.04/amd64/ok_01082020] ;
+then
+else echo Downloading Ubuntu 19.04
+wget -P /tmp/ http://old-releases.ubuntu.com/releases/19.04/ubuntu-19.04-desktop-amd64.iso
+mkdir -p /tmp/ubuntu19.04
+mount -o loop /tmp/ubuntu-19.04-desktop-amd64.iso /tmp/ubuntu19.04
+cp /tmp/ubuntu19.04/casper/vmlinuz /data/tftpboot/ubuntu/19.04/amd64
+cp /tmp/ubuntu19.04/casper/initrd /data/tftpboot/ubuntu/19.04/amd64
+cp -R /tmp/ubuntu19.04/* /data/install/xubuntu/19.04/amd64
+cp -R /tmp/ubuntu19.04/.disk /data/install/ubuntu/19.04/amd64
+umount /tmp/ubuntu19.04
+touch /data/tftpboot/ubuntu19.04/amd64/ok_01082020
+fi
