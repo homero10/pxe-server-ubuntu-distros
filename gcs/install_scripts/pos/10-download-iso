@@ -1,5 +1,5 @@
 if [ -f /data/tftpboot/ubuntu/19.04/amd64/ok_01082020 ] ;
-then
+then echo Image downloaded
 else echo Downloading Ubuntu 19.04
 wget -P /tmp/ http://old-releases.ubuntu.com/releases/19.04/ubuntu-19.04-desktop-amd64.iso
 mkdir -p /tmp/ubuntu19.04
