@@ -21,8 +21,11 @@ longdesc: "This package include Ubuntu systems for Network Boot on Ubuntu"
 
 
 # Versión del paquete
-version: 1.0
+version: 1.2
 
 # Cambios en esta versión
 changes:
+    - News in 1.2 version:
+    - Added postinst for download Ubuntu 19.04 ISO
+    - Updated postinst with functions for controlling the directories and Ubuntu 19.04 ISO
     - Initial release.
